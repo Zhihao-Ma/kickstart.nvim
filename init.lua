@@ -162,7 +162,7 @@ vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Close the buffer
-vim.keymap.set('n', '<leader>x', '<cmd>bd', { desc = '[B]uffer [D]elete' })
+vim.keymap.set('n', '<leader>x', '<cmd>bd<CR>', { desc = '[B]uffer [D]elete' })
 
 -- map jk to esc
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'esc' })
@@ -842,6 +842,9 @@ require('lazy').setup({
       --  - yinq - [Y]ank [I]nside [N]ext [']quote
       --  - ci'  - [C]hange [I]nside [']quote
       require('mini.ai').setup { n_lines = 500 }
+
+      -- jump
+      require('mini.jump2d').setup()
 
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
