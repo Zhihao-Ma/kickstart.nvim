@@ -843,7 +843,7 @@ require('lazy').setup({
       require('mini.ai').setup { n_lines = 500 }
 
       -- jump
-      require('mini.jump2d').setup()
+      -- require('mini.jump2d').setup()
 
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
